@@ -83,7 +83,7 @@ function WithdrawalPage() {
 
   return (
     <div className="withdrawal-page">
-      <h2>Withdraw ETH</h2>
+      <h2>Withdraw your DOGEGOV</h2>
       <p>Current Balance: {balance.toFixed(4)} ETH</p>
       <div className="withdrawal-form">
         <input

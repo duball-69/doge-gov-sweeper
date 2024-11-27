@@ -1,6 +1,6 @@
-/* src/pages/HomePage.css */
+/* src/pages/Homepage.css */
 .homepage {
-  background-color: #02005c;
+
   min-height: 100vh;
   padding: 40px 20px;
   display: flex;
@@ -13,10 +13,10 @@
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 5px;
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Arial', sans-serif; /* Changed font to Arial for a more modern look */
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -24,31 +24,42 @@
   color: #ffffff;
   font-size: 1.2rem;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
-.play-button {
+.small-play-button {
   background-color: #e01e3c;
   color: #ffffff;
-  padding: 15px 40px;
+  padding: 10px 15px;
   font-size: 1.5rem;
   border: 3px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 300px;
+  max-width: 100%;
 }
 
-.play-button:hover {
+.small-play-button:hover {
   background-color: #ffffff;
   color: #1f4c7f;
 }
 
 .trumpvskamala-image {
-  width: 100%;
-  max-width: 150px;
-  display: block;
-  margin-top: -40px; /* Add negative margin to move image up */
+  width: 50%;
+  margin-right: 20px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
 }

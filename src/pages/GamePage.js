@@ -115,7 +115,7 @@ function GamePage() {
     >
       <img src={trumpKamalaCloud} alt="Trump Kamala Cloud" className="header-image" />
       <h3>
-       The more Trumps you get, 
+       The more the ministers you get, 
         <br />
        the more you win!
       </h3>

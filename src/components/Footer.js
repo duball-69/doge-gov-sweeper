@@ -6,7 +6,8 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p className="copyright">
-          TrumpSweeper © 2024 All rights reserved
+          DogeSweeper © 2024 All rights reserved
+          
         </p>
       </div>
     </footer>

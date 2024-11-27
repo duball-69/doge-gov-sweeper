@@ -266,14 +266,14 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
   return (
     <div className="game-container">
       <h2>
-        TrumpSweeper -{' '}
+        DogeSweeper -{' '}
         {mode === 'starting'
           ? 'Starting Mode'
           : `${mode.charAt(0).toUpperCase() + mode.slice(1)} Mode`}
       </h2>
       
       <p className="game-description">
-        Get more you get, the more you win. Cash out before hitting a Kamala!
+        Get more you get, the more you win. Cash out before hitting a bomb!
       </p>
 
       <div className="bet-multiplier-container">
@@ -281,7 +281,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
           <div className="bet-input-container">
             <input
               type="number"
-              placeholder={balance <= 0 ? "Please deposit to play" : "Enter bet amount in ETH"}
+              placeholder={balance <= 0 ? "Please deposit to play" : "Enter bet amount in DOGEGOV"}
               value={betAmount}
               onChange={(e) => setBetAmount(e.target.value)}
               min="0"
@@ -345,11 +345,11 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
           <div className="game-over-box">
             <img 
               src={kamalaBeating} 
-              alt="Kamala Wins" 
+              alt="The libtards win again" 
               className="game-over-image"
             />
             <h3>You Lost!</h3>
-            <p>Kamala wins again.</p>
+            <p>The libtards win again.</p>
             <button onClick={resetGame} className="try-again-button">
               Try Again
             </button>

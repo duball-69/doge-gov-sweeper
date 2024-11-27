@@ -127,13 +127,13 @@ function TrumpSweeperFree({ difficulty = 'easy' }) {
   return (
     <div className="game-container">
       <h2>
-        TrumpSweeper Free - {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)} Mode
+        DogeSweeper Free - {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)} Mode
       </h2>
       
       <p className="game-description">
-        The more Trump faces you get, the more you win.
+        The more ministers you get, the more you win.
         <br />
-        Cash out any time before hitting a Kamala!
+        Cash out any time before the libtards see you!
       </p>
 
       <div className="bet-multiplier-container">
@@ -186,7 +186,7 @@ function TrumpSweeperFree({ difficulty = 'easy' }) {
           <div className="game-over-box">
             <img src={kamalaBeating} alt="Kamala Wins" className="game-over-image" />
             <h3>You Lost!</h3>
-            <p>Kamala wins again.</p>
+            <p>The libtards win again.</p>
             <button onClick={resetGame} className="try-again-button">
               Try Again
             </button>

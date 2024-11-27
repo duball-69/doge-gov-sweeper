@@ -25,9 +25,9 @@ function FreeGame() {
     <div className="game-page-container">
       <div className="game-page-content">
         <img src={trumpKamalaCloud} alt="Trump Kamala Cloud" className="header-image" />
-        <h1 className="main-title">Trump Kamala Cloud</h1>
+       
         <h2 className="subtitle">
-          The more Trumps you get,
+          The more ministers you clean,
           <br />
           the more you win!
         </h2>
