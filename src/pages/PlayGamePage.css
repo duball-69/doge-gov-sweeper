@@ -1,0 +1,56 @@
+.play-game-page {
+  background-color: #02005c;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.difficulty-selection {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.difficulty-selection label {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.difficulty-selection select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.difficulty-selection select option {
+  background-color: #1f4c7f;
+  color: #ffffff;
+}
+
+.connect-button {
+  background-color: #e01e3c;
+  color: #ffffff;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px 0;
+}
+
+.connect-button:hover {
+  background-color: #ffffff;
+  color: #02005c;
+}

@@ -1,0 +1,122 @@
+.game-page-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .game-page-content {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header-image {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .main-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .subtitle {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+  }
+  
+  .difficulty-description {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .difficulty-label {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .real-money-button {
+    background-color: #e01e3c;
+    color: #ffffff;
+    padding: 10px 40px;
+    font-size: 1.3rem;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .real-money-button:hover {
+    background-color: #ffffff;
+    color: #02005c;
+  }
+  
+  .start-game-button {
+    background-color: #e01e3c;
+    color: #ffffff;
+    padding: 10px 40px;
+    font-size: 1.3rem;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .start-game-button:hover {
+    background-color: #ffffff;
+    color: #02005c;
+  }
+  
+  .difficulty-selector select {
+    padding: 8px 15px;
+    font-size: 1.1rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    min-width: 250px;
+    margin-top: 10px;
+  }
+  
+  .difficulty-selector select option {
+    background-color: #02005c;
+    color: #ffffff;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .real-money-button,
+    .start-game-button {
+      padding: 8px 30px;
+      font-size: 1.1rem;
+      border-width: 2px;
+    }
+  
+    .difficulty-selector select {
+      font-size: 1rem;
+      padding: 6px 12px;
+      min-width: 200px;
+    }
+  }

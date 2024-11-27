@@ -1,0 +1,116 @@
+.game-page {
+  background-color: #02005c;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-page h3 {
+  color: #ffffff;
+  font-size: 2.1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+.game-page p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.game-page select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: transparent;
+  color: #ffffff;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.game-page select option {
+  background-color: #1f4c7f;
+  color: #ffffff;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-page button,
+.connect-button,
+.free-play-button {
+  background-color: #e01e3c;
+  color: #ffffff;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-page button:hover,
+.connect-button:hover,
+.free-play-button:hover {
+  background-color: #ffffff;
+  color: #02005c;
+}
+
+/* Style for the difficulty selection container */
+.game-page label {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+  margin-top: -20px; /* Adjust this value to control spacing */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .header-image {
+    max-width: 150px;
+    margin-top: -10px;
+  }
+
+  .button-container {
+    gap: 10px;
+  }
+
+  .game-page button,
+  .connect-button,
+  .free-play-button {
+    width: 140px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
+  
