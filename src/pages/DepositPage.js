@@ -138,7 +138,7 @@ function DepositPage() {
     <div className="deposit-page">
       <h2>Deposit DOGEGOV to Play</h2>
       <p className="subtitle">Deposit tokens to start playing. You can withdraw them anytime.</p>
-      <p>Current Balance: {balance.toFixed(4)} ETH</p>
+      <p>Current Balance: {balance.toFixed(4)} DOGEGOV</p>
       <div className="deposit-form">
         <input
           type="number"

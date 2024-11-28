@@ -84,11 +84,11 @@ function WithdrawalPage() {
   return (
     <div className="withdrawal-page">
       <h2>Withdraw your DOGEGOV</h2>
-      <p>Current Balance: {balance.toFixed(4)} ETH</p>
+      <p>Current Balance: {balance.toFixed(4)} DOGEGOV</p>
       <div className="withdrawal-form">
         <input
           type="number"
-          placeholder="Enter amount to withdraw in ETH"
+          placeholder="Enter amount to withdraw in DOGEGOV"
           value={withdrawAmount}
           onChange={(e) => setWithdrawAmount(e.target.value)}
           min="0"

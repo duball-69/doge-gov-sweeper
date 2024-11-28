@@ -216,7 +216,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
       setCashedOut(true);
       setGameStarted(false);
       incrementGamesPlayed(); // Increment games played after auto cash out
-      setStatus(`Congratulations! You've won ${winnings.toFixed(4)} ETH!`);
+      setStatus(`Congratulations! You've won ${winnings.toFixed(4)} DOGEGOV!`);
       initializeGame(); // Reset the game after auto cash out
     } catch (error) {
       console.error('Error updating balance in Supabase:', error);
@@ -333,10 +333,10 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
 
       <div className="stats-container">
         <p>Games Played: {gamesPlayed}</p>
-        <p>Current Balance: {balance.toFixed(4)} ETH</p>
+        <p>Current Balance: {balance.toFixed(4)} DOGEGOV</p>
         <p>Coins Collected: {coinsCollected}</p>
         <p className="potential-winnings">
-          Potential Win: {potentialWinnings} ETH
+          Potential Win: {potentialWinnings} DOGEGOV
         </p>
       </div>
 
@@ -391,7 +391,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
           <div className="cashout-box">
           <video src={elonDoge} autoPlay loop muted className="cashout-image"></video>
             <h3>You Cashed Out!</h3>
-            <p>You are a legend and won {cashoutAmount.toFixed(4)} ETH!</p>
+            <p>You are a legend and won {cashoutAmount.toFixed(4)} DOGEGOV!</p>
             <p className="multiplier-text">({currentMultiplier}x multiplier)</p>
             <button onClick={resetGame} className="play-again-button">
               Play Again
