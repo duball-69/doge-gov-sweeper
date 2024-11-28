@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 import { supabase } from './SupabaseClient'; 
 
 const metadata = {
-  name: "TrumpSweeper",
+  name: "DogeSweeper",
   description: "An on-chain mining game",
   url: "N/A",
   icons: ["N/A"],

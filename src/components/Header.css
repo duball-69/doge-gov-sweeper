@@ -53,12 +53,13 @@
   background-color: #000000;
   color: #ffffff;
   padding: 8px 20px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 2px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-left: auto; /* This will push the button to the right when not connected */
+  font-family: 'Bungee', cursive; /* Added Bungee font */
 }
 
 .connect-button:hover {

@@ -10,11 +10,11 @@
 
 .homepage h1 {
   color: #ffffff;
-  font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 3rem;
+  
   margin-bottom: 5px;
-  font-family: 'Arial', sans-serif; /* Changed font to Arial for a more modern look */
-  text-transform: uppercase;
+  font-family: 'Bungee', sans-serif; /* Changed font to Bungee for a more modern look */
+  font-weight: 400;
   letter-spacing: 2px;
   text-align: left;
   width: 100%;
@@ -32,6 +32,7 @@
 
 .small-play-button {
   background-color: #e01e3c;
+  font-family: 'Bungee', cursive;
   color: #ffffff;
   padding: 10px 15px;
   font-size: 1.5rem;

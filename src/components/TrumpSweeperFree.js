@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import trumpImage from '../assets/trump.png';
 import kamalaImage from '../assets/kamala.png';
 import kamalaBeating from '../assets/kamalabeating.png';
+import evilGary from "../assets/evilgary.mp4";
 import trumpFist from '../assets/trumpfist.png';
+import elonDoge from "../assets/elondoge.mp4";
 import trumpGold from '../assets/trumpgold.png';
 import './TrumpSweeper.css';
 
@@ -126,14 +128,13 @@ function TrumpSweeperFree({ difficulty = 'easy' }) {
 
   return (
     <div className="game-container">
-      <h2>
+      <h2 className="title-dogesweeper">
         DogeSweeper Free - {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)} Mode
       </h2>
       
       <p className="game-description">
-        The more ministers you get, the more you win.
-        <br />
-        Cash out any time before the libtards see you!
+        The more Elons you get, the more you win.
+        Cash out before Gary catches you!
       </p>
 
       <div className="bet-multiplier-container">
@@ -184,9 +185,9 @@ function TrumpSweeperFree({ difficulty = 'easy' }) {
       {gameOver && (
         <div className="game-over-overlay">
           <div className="game-over-box">
-            <img src={kamalaBeating} alt="Kamala Wins" className="game-over-image" />
+            <video src={evilGary} autoPlay loop muted className="game-over-image"></video>
             <h3>You Lost!</h3>
-            <p>The libtards win again.</p>
+            <p>Gary wins again. Give me all your crypto buhahaha</p>
             <button onClick={resetGame} className="try-again-button">
               Try Again
             </button>
@@ -197,7 +198,7 @@ function TrumpSweeperFree({ difficulty = 'easy' }) {
       {cashedOut && (
         <div className="game-over-overlay">
           <div className="cashout-box">
-            <img src={trumpFist} alt="Trump Fist" className="cashout-image" />
+            <video src={elonDoge} autoPlay loop muted className="cashout-image"></video>
             <h3>You Cashed Out!</h3>
             <p>You won {virtualWinnings.toFixed(2)}x!</p>
             <p className="multiplier-text">({currentMultiplier.toFixed(2)}x multiplier)</p>

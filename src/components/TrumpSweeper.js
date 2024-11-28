@@ -10,6 +10,8 @@ import kamalaBeating from '../assets/kamalabeating.png';
 import trumpGold from '../assets/trumpgold.png';
 import trumpFist from '../assets/trumpfist.png';
 import { useNavigate } from 'react-router-dom';
+import evilGary from "../assets/evilgary.mp4";
+import elonDoge from "../assets/elondoge.mp4";
 
 function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
   const gridSize = 5;
@@ -265,7 +267,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
 
   return (
     <div className="game-container">
-      <h2>
+      <h2 className="title-dogesweeper">
         DogeSweeper -{' '}
         {mode === 'starting'
           ? 'Starting Mode'
@@ -343,13 +345,9 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
       {gameOver && (
         <div className="game-over-overlay">
           <div className="game-over-box">
-            <img 
-              src={kamalaBeating} 
-              alt="The libtards win again" 
-              className="game-over-image"
-            />
+          <video src={evilGary} autoPlay loop muted className="game-over-image"></video>
             <h3>You Lost!</h3>
-            <p>The libtards win again.</p>
+            <p>Gary wins again. Give me all your crypto buhahaha</p>
             <button onClick={resetGame} className="try-again-button">
               Try Again
             </button>
@@ -391,11 +389,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
       {cashedOut && (
         <div className="game-over-overlay">
           <div className="cashout-box">
-            <img 
-              src={trumpFist} 
-              alt="Trump Fist" 
-              className="cashout-image"
-            />
+          <video src={elonDoge} autoPlay loop muted className="cashout-image"></video>
             <h3>You Cashed Out!</h3>
             <p>You are a legend and won {cashoutAmount.toFixed(4)} ETH!</p>
             <p className="multiplier-text">({currentMultiplier}x multiplier)</p>
