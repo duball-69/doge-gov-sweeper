@@ -88,7 +88,7 @@ function DepositDogePage() {
       setStatus('Waiting for transaction confirmation...');
       await tx.wait();
       setTransactionHash(tx.hash);
-  
+   
       // Update balance in Supabase
       await updateBalanceInSupabase(address, depositAmount);
       setStatus('Deposit successful!');
