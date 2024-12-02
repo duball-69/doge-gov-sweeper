@@ -7,8 +7,10 @@ import HomePage from "./pages/HomePage";
 import GamePage from "./pages/GamePage";
 import FreePlayGamePage from "./pages/FreePlayGamePage";
 import DepositPage from "./pages/DepositPage";
+import DepositDogePage from "./pages/DepositeDogePage";
 import PlayGamePage from "./pages/PlayGamePage";
 import WithdrawalPage from "./pages/WithdrawalPage";
+import WithdrawalDogePage from "./pages/WithdrawalDogePage";
 import Footer from "./components/Footer";
 import FreeGame from "./pages/FreeGame";
 
@@ -26,6 +28,8 @@ function App() {
           <Route path="/free-play" element={<FreePlayGamePage />} />
           <Route path="/deposit" element={<DepositPage />} />
           <Route path="/withdrawal" element={<WithdrawalPage />} />
+          <Route path="/depositdogegov" element={<DepositDogePage/>}/>
+          <Route path="/withdrawaldogegov" element={<WithdrawalDogePage/>}/>
         </Routes>
         <Footer />
       </Router>

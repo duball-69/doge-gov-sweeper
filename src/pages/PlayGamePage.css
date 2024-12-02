@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Bungee', cursive;
 }
 
 .difficulty-selection label {
@@ -23,6 +24,7 @@
 }
 
 .difficulty-selection select {
+  font-family: 'Bungee', cursive;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ffffff;
@@ -35,6 +37,7 @@
 
 .difficulty-selection select option {
   background-color: #000000;
+  font-family: 'Bungee', cursive;
   color: #ffffff;
 }
 
@@ -54,5 +57,5 @@
 
 .connect-button:hover {
   background-color: #ffffff;
-  color: #02005c;
+  color: #000000;
 }

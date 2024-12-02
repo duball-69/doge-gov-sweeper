@@ -19,6 +19,14 @@ const sepoliaMainnet = {
   rpcUrl: process.env.REACT_APP_SEPOLIA_RPC_URL,
 };
 
+
+const baseMainnet={chainId:8453,
+  name:"Base",
+  currency:"ETH",
+  explorerUrl:"https://base.blockscout.com/",
+  rpcUrl:process.env.REACT_APP_BASE_RPC_URL,
+};
+
 const ethereumMainnet = {
   chainId: 1,
   name: "Ethereum",
@@ -37,7 +45,7 @@ const web3ModalInstance = createWeb3Modal({
     rpcUrl: process.env.REACT_APP_ETHEREUM_RPC_URL,
     defaultChainId: 1,
   }),
-  chains: [sepoliaMainnet, ethereumMainnet],
+  chains: [sepoliaMainnet, ethereumMainnet, baseMainnet],
   projectId,
   enableAnalytics: true,
 });

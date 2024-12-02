@@ -10,6 +10,13 @@ const sepoliaMainnet = {
   rpcUrl: process.env.REACT_APP_SEPOLIA_RPC_URL,
 };
 
+const baseMainnet={chainId:8453,
+  name:"Base",
+  currency:"ETH",
+  explorerUrl:"https://base.blockscout.com/",
+  rpcUrl:REACT_APP_BASE_RPC_URL,
+}
+
 const ethereumMainnet = {
   chainId: 1,
   name: "Ethereum",
@@ -33,7 +40,7 @@ const ethersConfig = defaultConfig({
 // Initialize WalletConnect with Sepolia and Ethereum
 const web3Modal = createWeb3Modal({
   ethersConfig,
-  chains: [sepoliaMainnet, ethereumMainnet], // Only Sepolia and Ethereum
+  chains: [sepoliaMainnet, ethereumMainnet, baseMainnet], // Only Sepolia and Ethereum
   projectId: "37aeeb9efa7c2819cd48b2c62ace2529",
   enableAnalytics: true,
 });

@@ -300,6 +300,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
           </div>
         )}
          {gameStarted && !gameOver && !wonGame && (
+          <div>
             <button
               onClick={handleCashOut}
               className="cashout-button"
@@ -307,6 +308,9 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
             >
               Cash Out
             </button>
+            <p className="current-multiplier"> {currentMultiplier}x</p>
+            
+            </div>
           )}
       
       </div>
