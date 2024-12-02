@@ -66,20 +66,20 @@
 
 /* Updated button style to match homepage exactly */
 .deposit-form button {
-  background-color: #e01e3c;
+  background-color: #ff9500;
   font-family: 'Bungee', cursive;
   color: #ffffff;
   padding: 10px 40px;
   font-size: 1.5rem;
-  border: 3px solid #ffffff;
+  border: 3px solid #ff9500;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .deposit-form button:hover {
-  background-color: #ffffff;
-  color: #1f4c7f;
+  background-color: #000000;
+  color: #ff9500;
 }
 
 /* Add specific style for the balance display if needed */

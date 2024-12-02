@@ -26,9 +26,8 @@ function FreeGame() {
       <div className="game-page-content">
         
         <h2 className="subtitle">
-          The more ministers you clean,
-          <br />
-          the more you win!
+          Catch all Elons, avoid all Garys,
+         
         </h2>
 
         <div className="real-money-banner">
@@ -39,11 +38,10 @@ function FreeGame() {
 
         <div className="game-setup">
           <p className="difficulty-description">
-            Choose your difficulty level - bigger risks mean bigger rewards!
+            The bigger risks mean bigger rewards!
           </p>
           
           <div className="difficulty-selector">
-            <label htmlFor="difficulty" className="difficulty-label">Select Difficulty:</label>
             <select 
               id="difficulty"
               value={difficulty}

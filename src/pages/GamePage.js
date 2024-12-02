@@ -114,10 +114,10 @@ function GamePage() {
       }}
     >
       <img src={trumpKamalaCloud} alt="Trump Kamala Cloud" className="header-image" />
-      <h3>
-       The more the ministers you get, 
+      <h3 className="title-play">
+       The more Elons you get, 
         <br />
-       the more you win!
+       the more you win but Be careful with Gary.
       </h3>
       {!isConnected ? (
         <div className="button-container">
@@ -136,9 +136,8 @@ function GamePage() {
           ) : (
             <>
               <p style={{ margin: '10px 0' }}>
-                Choose your difficulty level - bigger risks mean bigger rewards! Deposit ETH to play.
+                Bigger risks bigger rewards! Deposit ETH to play.
               </p>
-              <label htmlFor="difficulty">Select Difficulty: </label>
               <select 
                 id="difficulty"
                 value={difficulty}

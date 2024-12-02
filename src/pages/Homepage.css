@@ -27,16 +27,17 @@
   text-align: left;
   line-height: 1.6;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .small-play-button {
-  background-color: #e01e3c;
-  font-family: 'Bungee', cursive;
+  background-color: #ff9500;
   color: #ffffff;
+  font-family: 'Bungee', cursive;
+
   padding: 10px 15px;
   font-size: 1.5rem;
-  border: 3px solid #ffffff;
+  border: 3px solid #ff9500;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -45,8 +46,8 @@
 }
 
 .small-play-button:hover {
-  background-color: #ffffff;
-  color: #1f4c7f;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .trumpvskamala-image {

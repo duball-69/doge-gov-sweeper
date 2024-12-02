@@ -19,7 +19,7 @@ function HomePage() {
         <div className="text-container">
           <h1>Help Elon clean the government</h1>
           <p>
-            Play DogeSweeper! Catch them all , but be careful with the libtards. They will take your kids, your crypto. The more ministers you clean, the more you earn!
+            Play DogeSweeper! Catch the most Elons possible, but be careful with the libtards. They will get your crypto.
           </p>
           <button className="small-play-button" onClick={handlePlay}>
             Start Playing

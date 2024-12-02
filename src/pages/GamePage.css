@@ -40,14 +40,14 @@
 }
 
 .game-page select option {
-  background-color: #1f4c7f;
+  background-color: #ff9500;
   color: #ffffff;
 }
 
 .button-container {
   display: flex;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
   justify-content: center;
   align-items: center;
 }
@@ -55,16 +55,17 @@
 .game-page button,
 .connect-button,
 .free-play-button {
-  background-color: #e01e3c;
+  background-color: #000000;
+  color: #ff9500;
   font-family: 'Bungee', cursive;
-  color: #ffffff;
+  
   padding: 8px 20px;
   font-size: 1.1rem;
   border: 2px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 160px;
+  width: 250px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -75,7 +76,7 @@
 .connect-button:hover,
 .free-play-button:hover {
   background-color: #ffffff;
-  color: #02005c;
+  color: #000000;
 }
 
 /* Style for the difficulty selection container */
@@ -84,10 +85,9 @@
   font-size: 1.2rem;
   margin-right: 10px;
 }
-
 .header-image {
   width: 100%;
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 20px;
   display: block;

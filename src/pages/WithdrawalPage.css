@@ -65,7 +65,7 @@
 
 /* Updated button style to match homepage */
 .withdrawal-form button {
-  background-color: #e01e3c;
+  background-color: #ff9500;
   font-family: 'Bungee', cursive;
   color: #ffffff;
   padding: 10px 40px;
@@ -78,7 +78,7 @@
 
 .withdrawal-form button:hover {
   background-color: #ffffff;
-  color: #1f4c7f;
+  color: #000000;
 }
 
 /* Status message styling */

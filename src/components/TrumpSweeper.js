@@ -274,9 +274,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
           : `${mode.charAt(0).toUpperCase() + mode.slice(1)} Mode`}
       </h2>
       
-      <p className="game-description">
-        Get more you get, the more you win. Cash out before hitting a bomb!
-      </p>
+     
 
       <div className="bet-multiplier-container">
         {!gameStarted && !gameOver && !wonGame && (
@@ -297,11 +295,11 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
             >
               {balance <= 0 ? 'Deposit to Play' : 'Place Bet'}
             </button>
+            <p className="current-multiplier"> {currentMultiplier}x</p>
+        
           </div>
         )}
-        <div className="multiplier-cashout-container">
-          <p className="current-multiplier">Current Multiplier: {currentMultiplier}x</p>
-          {gameStarted && !gameOver && !wonGame && (
+         {gameStarted && !gameOver && !wonGame && (
             <button
               onClick={handleCashOut}
               className="cashout-button"
@@ -310,7 +308,7 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
               Cash Out
             </button>
           )}
-        </div>
+      
       </div>
 
       <div className="grid">
@@ -333,11 +331,8 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
 
       <div className="stats-container">
         <p>Games Played: {gamesPlayed}</p>
-        <p>Current Balance: {balance.toFixed(4)} DOGEGOV</p>
-        <p>Coins Collected: {coinsCollected}</p>
-        <p className="potential-winnings">
-          Potential Win: {potentialWinnings} DOGEGOV
-        </p>
+        <p>Balance: {balance.toFixed(4)}</p>
+        
       </div>
 
       {status && <p className="status-message">{status}</p>}
@@ -361,22 +356,14 @@ function TrumpSweeper({ difficulty, userAddress, balance, setBalance }) {
         </div>
       )}
 
-      <button
-        onClick={handleCashOut}
-        className="cashout-button"
-        disabled={
-          !gameStarted || gameOver || currentMultiplier === 1 || cashedOut || wonGame
-        }
-      >
-        Cash Out
-      </button>
+      
       <div className="game-buttons">
         <button 
           onClick={resetGame} 
           className="reset-button"
           disabled={gameStarted && !gameOver && !wonGame && !cashedOut}
         >
-          {gameOver || wonGame ? 'Play Again' : 'Reset Game'}
+          {gameOver || wonGame ? 'Play Again' : 'Reset'}
         </button>
         <button 
           onClick={goToDeposit} 

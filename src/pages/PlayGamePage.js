@@ -56,7 +56,7 @@ function PlayGamePage() {
           setBalance={setBalance}
         />
       ) : (
-        <button onClick={connectWallet} className="connect-button">Connect Wallet to Play</button>
+        <button onClick={connectWallet} className="connect-button">Connect</button>
       )}
       
       <div className="difficulty-selection">
