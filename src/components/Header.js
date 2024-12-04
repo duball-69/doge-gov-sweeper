@@ -53,7 +53,7 @@ function Header() {
             <Link to="/" onClick={() => setIsNavOpen(false)}>Home</Link>
             <Link to="/play" onClick={() => setIsNavOpen(false)}>Play</Link>
             <Link to="/depositdogegov" onClick={() => setIsNavOpen(false)}>Deposit</Link>
-            <Link to="/withdrawal" onClick={() => setIsNavOpen(false)}>Withdrawal</Link>
+            <Link to="/withdrawaldogegov" onClick={() => setIsNavOpen(false)}>Withdrawal</Link>
             <Link to="/free" onClick={() => setIsNavOpen(false)}>Try for free</Link>
           </nav>
         </div>

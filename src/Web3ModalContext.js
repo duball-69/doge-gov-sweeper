@@ -45,7 +45,7 @@ const web3ModalInstance = createWeb3Modal({
     rpcUrl: process.env.REACT_APP_ETHEREUM_RPC_URL,
     defaultChainId: 1,
   }),
-  chains: [sepoliaMainnet, ethereumMainnet, baseMainnet],
+  chains: [ethereumMainnet],
   projectId,
   enableAnalytics: true,
 });

@@ -40,7 +40,7 @@ const ethersConfig = defaultConfig({
 // Initialize WalletConnect with Sepolia and Ethereum
 const web3Modal = createWeb3Modal({
   ethersConfig,
-  chains: [sepoliaMainnet, ethereumMainnet, baseMainnet], // Only Sepolia and Ethereum
+  chains: [ethereumMainnet], // Only Sepolia and Ethereum
   projectId: "37aeeb9efa7c2819cd48b2c62ace2529",
   enableAnalytics: true,
 });

@@ -16,8 +16,9 @@ function DepositDogePage() {
   const [depositSuccessful, setDepositSuccessful] = useState(false);
 
   // Token contract details
-  const tokenAddress = '0x67f0870BB897F5E1c369976b4A2962d527B9562c'; // Token address
-
+  const tokenAddress = '0x1121AcC14c63f3C872BFcA497d10926A6098AAc5'; // ETH Token address
+//  const tokenAddress = '0x67f0870BB897F5E1c369976b4A2962d527B9562c'; // Base Token address
+ 
   // Fetch balance from Supabase
   const fetchBalance = async () => {
     if (!address) return;
@@ -62,7 +63,7 @@ function DepositDogePage() {
       const signer = await ethersProvider.getSigner();
   
       // Create a contract instance for the token
-      const tokenContract = new ethers.Contract(tokenAddress, tokenAbi, signer);
+      const tokenContract = new  ethers.Contract(tokenAddress, tokenAbi, signer);
   
       // Retrieve the token's decimals
       const decimals = await tokenContract.decimals();
