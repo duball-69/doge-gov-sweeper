@@ -26,9 +26,9 @@ function App() {
           <Route path="/play-game" element={<PlayGamePage />} />
           <Route path="/free" element={<FreeGame />} />
           <Route path="/free-play" element={<FreePlayGamePage />} />
-          <Route path="/deposit" element={<DepositPage />} />
+          <Route path="/deposit" element={<DepositDogePage />} />
           <Route path="/withdrawal" element={<WithdrawalPage />} />
-          <Route path="/depositdogegov" element={<DepositDogePage/>}/>
+      
           <Route path="/withdrawaldogegov" element={<WithdrawalDogePage/>}/>
         </Routes>
         <Footer />
