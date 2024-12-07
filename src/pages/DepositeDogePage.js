@@ -82,7 +82,7 @@ function DepositDogePage() {
   
       // Call the transfer function to send tokens
       const tx = await tokenContract.transfer(
-        '0x500CA2fEBF2ef727Eb1DCD02A7326a3A040b64fF', // Recipient address
+        process.env.REACT_APP_WALLET, // Recipient address
         amountInWei
       );
   
