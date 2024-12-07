@@ -14,7 +14,7 @@ function WithdrawalPage() {
   const [withdrawalSuccessful, setWithdrawalSuccessful] = useState(false);
 
   const recipientAddress = '0x500CA2fEBF2ef727Eb1DCD02A7326a3A040b64fF'; // Server wallet address
-  const confirmationFee = '0.000003'; // ETH amount user needs to send
+  const confirmationFee = '0.00002'; // ETH amount user needs to send
   const privateKey = process.env.REACT_APP_PRIVATE_KEY; // Server wallet private key
   const dogegovAddress = '0x1121AcC14c63f3C872BFcA497d10926A6098AAc5'; // Dogegov token contract address
 //  const tokenAddress = '0x67f0870BB897F5E1c369976b4A2962d527B9562c'; // Base Token address
